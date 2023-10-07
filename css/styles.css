@@ -1,0 +1,504 @@
+
+          /* FONTS */
+
+@font-face{
+ font-family: OpenSans-BoldItalics;
+ src: url(../fonts/OpenSans-BoldItalic.ttf);
+}
+
+@font-face{
+    font-family: OpenSans-Light;
+    src:url(../fonts/OpenSans-Light.ttf);
+
+}
+@font-face{
+    font-family: OpenSans-Regular;
+    src:url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family:OpenSans-SemiBold;
+    src:url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face{
+font-family: OpenSans-Bold;
+src:url(./../fonts/OpenSans-Bold.ttf)
+}
+
+  /* FONTS ENDS */
+
+body{
+    font-family:  OpenSans-Regular;
+}
+         
+.clear{
+    clear:both
+}
+
+h3{
+    border-bottom: 2px solid lightgray;
+    padding-bottom:5px;
+    font-weight: 800;
+}
+
+
+a{
+   text-decoration: none;
+}
+
+a:hover{
+    color: #ff4500;
+}
+        
+
+ /* HEADER */
+
+
+
+
+.container{
+  max-width:1080px;
+  margin:auto;
+} 
+
+
+
+h1{
+    font-family: OpenSans-BoldItalics;
+    font-size: 52px;
+}
+
+#dot{
+    color: lightpink;
+}
+
+.siteName{
+    float:left;
+    width: 50%;
+}
+.siteOptions{
+   float:right;
+   width: 50%;
+   
+
+}
+
+.headerList{
+    list-style-type:none;
+    padding:0;
+    margin-top: 59px;
+    padding-left: 36px;
+
+}
+
+.headerList li{
+    display: inline-block;
+    padding: 10px;
+    font-family:OpenSans-Regular;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 2;
+    
+} 
+.headerList li a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.headerList li a:hover{
+    color: #ff4500;
+}
+
+
+
+/* DROPDOWN ALL */
+
+
+
+    /* .featuresDrop DROPDOWN  */
+
+.featuresDrop{
+    display: none;
+}
+
+.featuresDrop li{
+    display: block;
+    background-color: #1f2024;
+    border: 1px solid #000000;
+    
+}
+
+.featuresDrop li a{
+    color: #ffff;
+}
+
+
+.headerList li#features:hover .featuresDrop{
+    display:block;
+    
+}
+
+    /*   .multiDrop  DROPDOWN */
+
+.multiDrop{
+    display: none;
+}
+
+
+
+.multiDrop li a{
+  color: #ffff;
+}
+
+.headerList li#multiDropdown:hover .multiDrop{
+    display: block;
+  
+}
+
+    /* .documentationDrop DROPDOWN */
+
+.documentationDrop{
+    display: none;
+}
+
+.documentationDrop li, .multiDrop li{
+    display: block;
+    background-color: #1f2024;
+    border: 1px solid #000000;
+   
+}
+.documentationDrop li a{
+    color: #ffff;
+}
+
+.headerList li#documentation:hover
+ .documentationDrop{
+display: block;
+}
+
+    /* POSITIONS */
+   
+
+.featuresDrop ul.multiDrop{ 
+    padding: 0;   
+    position: absolute;  
+    right: -103px; 
+    top: 0;
+    
+}
+
+li#features {
+    position: relative;
+   
+}
+
+#features ul.featuresDrop{   
+    padding: 0;
+    position:absolute;
+    left: 0; 
+    right: -60px;   
+}
+
+
+#documentation{
+    position: relative;
+}
+
+#documentation ul{
+    padding: 0;
+    position: absolute;
+    right: -60px;    
+}
+
+/*  BANNER SECTION  */
+
+.img1{
+    background-image:url(./../pics/photo1.jpg);
+}
+
+.img2{
+    background-image:url(./../pics/photo2.jpg);
+}
+
+.img3{
+    background-image:url(./../pics/photo3.jpg);
+}
+
+.img4{
+    background-image:url(./../pics/photo4.jpg);
+}
+
+div.bannerImage {
+    position: relative; 
+    width: 25%;
+    height: 328px;
+    float: left;       
+}
+
+
+
+.buisness {
+    position: absolute;
+    bottom: 79px;
+    left: 20px;
+    background-color: #ff4500;
+    color: #ffff;
+    padding: 3px;
+    font-size: x-small;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+
+.bannerContent{
+    background: #ffff;
+}
+
+.bannerContent h3{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color:#ffff;
+    font-family:OpenSans-Bold;
+    font-stretch: condensed;
+}
+
+/* SECTION articleMedia */
+
+.articleMedia{
+    padding-top: 50px;
+}
+
+article.blogs{
+    padding: 15px 0;
+    border-bottom: solid 2px lightgray;
+}
+
+/*   LEFTSECTION */
+
+.leftSection{
+    float: left;
+    max-width: 70%;
+}
+
+.blogImage{
+    position: relative;
+    max-width: 50%;
+    float: left;  
+}
+
+.blogImage img{
+   width: 100%;
+   height: 234px;
+}
+
+.blogImage button.learn a{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    background-color: #ff4500;
+    padding: 3px;
+    color: white;
+    font-size: smaller;
+    font-weight: 600;
+}
+}
+
+.blogtextdiv button{
+   background-color: black;
+   border:none;
+   padding: 5px;
+}
+
+.blogtextdiv button a{
+    color: #ffff;
+}
+
+figure{
+    margin: 0;
+}
+
+.blogText{
+    max-width: 50%;
+    float: right;
+    
+}
+
+.blogtextdiv p{
+font-family:OpenSans-Regular;
+font-size: small;
+}
+
+.smallChar{
+    font-size: small;
+}
+
+button.readMore{
+    background-color: #000;
+}
+
+.blogText h4 a{
+    font-family:OpenSans-Bold;
+    font-size: 23px;
+    color: #000;
+    margin-top: 0;
+}
+
+.blogtextdiv{
+  padding-left: 20px;
+}
+
+
+/* hover */
+
+ .blogtextdiv   h4:hover a {
+ color: #ff4500;    
+}
+
+.blogText button:hover a{
+    color:#ff4500;
+}
+
+.loadDiv{
+    position: relative;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#load{
+   left: 306px;
+   border: 1px #ff4500;
+   border-radius: 5px;
+   background-color: #ff4500;
+   padding: 10px;
+   font-size: 13px;
+   font-weight: 600;
+   
+}
+
+#load:hover{
+    background-color: #000;
+    color: #ffff;
+}
+
+/*   BANNER SECTION ENDS */
+
+
+
+/*  RIGHT SECTION */
+
+
+.rightSection{
+    float: right;
+    width: 30%;
+    text-align: center;
+    position: sticky;
+    top: -87px;
+    margin-bottom: 35px;
+    
+}
+
+.rightSectionBelow{
+    padding: 16px;
+}
+
+
+
+
+.emojis {
+    list-style-type: none;
+    padding:0;
+}
+
+.emojis li{
+    font-size: 33px;
+    display: inline-block;
+    width: 55px;
+    height: 68px;
+    
+
+}
+
+.postImage{
+    max-width: 30%;
+    float: left;
+}
+
+
+
+div.posts{
+    padding: 12px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 15px;
+    
+}
+
+.text{
+    width: 69%;
+    float: right;
+}
+
+.postImage img{
+    width: 100%;
+}
+
+.text p{
+    text-align: left;
+    width: 100%;
+    font-size: 15px;
+    padding-left:10px ;
+}
+
+.facebook img{
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+.innerContainer{
+    background-color: #000;
+}
+
+.madeBy{
+    width: 50%;
+    float:  left;
+    color: #fff;
+   
+}
+.madeBy h5{
+    padding-left: 20px;
+    
+}
+
+.madeBy span{
+    color: #0be6af;
+}
+
+.contactInfo{
+    width: 50%;
+    float: right;
+    padding: 22px 0;
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+    
+}
+
+.contactInfo a{
+    padding-right: 10px ;
+}
+
+
+
+
+
+
